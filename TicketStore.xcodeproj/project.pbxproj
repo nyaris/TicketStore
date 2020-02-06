@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,18 @@
 		6A369A5423E99F27008B30D8 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A369A5323E99F27008B30D8 /* HomeCoordinator.swift */; };
 		6A369A5723E9A01F008B30D8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A369A5523E9A01F008B30D8 /* HomeViewController.swift */; };
 		6A369A5823E9A01F008B30D8 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A369A5623E9A01F008B30D8 /* HomeViewController.xib */; };
+		6A369A6323EA0E41008B30D8 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A369A6123EA0E41008B30D8 /* SplashViewController.swift */; };
+		6A369A6423EA0E41008B30D8 /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A369A6223EA0E41008B30D8 /* SplashViewController.xib */; };
+		6A3C513823EB393600085001 /* ForgotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3C513623EB393600085001 /* ForgotViewController.swift */; };
+		6A3C513923EB393600085001 /* ForgotViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A3C513723EB393600085001 /* ForgotViewController.xib */; };
+		6A3C513B23EB3B5B00085001 /* ForgotController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3C513A23EB3B5B00085001 /* ForgotController.swift */; };
+		6A4087DA23EC44CA004BFEAB /* DetailsMoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4087D823EC44CA004BFEAB /* DetailsMoviesViewController.swift */; };
+		6A4087DB23EC44CA004BFEAB /* DetailsMoviesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A4087D923EC44CA004BFEAB /* DetailsMoviesViewController.xib */; };
+		6A4087DF23EC51F7004BFEAB /* Movies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4087DE23EC51F7004BFEAB /* Movies.swift */; };
+		6A4087E123EC537B004BFEAB /* MoviesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4087E023EC537B004BFEAB /* MoviesService.swift */; };
+		6A4087E323EC9F6E004BFEAB /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4087E223EC9F6E004BFEAB /* HomeController.swift */; };
+		6A4087E623ECAFA9004BFEAB /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4087E423ECAFA9004BFEAB /* MovieTableViewCell.swift */; };
+		6A4087E723ECAFA9004BFEAB /* MovieTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A4087E523ECAFA9004BFEAB /* MovieTableViewCell.xib */; };
 		6AB43DB823E868B00057536A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB43DB723E868B00057536A /* AppDelegate.swift */; };
 		6AB43DBC23E868B00057536A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB43DBB23E868B00057536A /* ViewController.swift */; };
 		6AB43DBF23E868B00057536A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AB43DBD23E868B00057536A /* Main.storyboard */; };
@@ -24,6 +36,8 @@
 		6AB43DE423E8B1240057536A /* SecurityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB43DE323E8B1240057536A /* SecurityService.swift */; };
 		6AB43DE723E8B1F20057536A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB43DE623E8B1F20057536A /* User.swift */; };
 		6AB43DE923E8BD0A0057536A /* LoginScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB43DE823E8BD0A0057536A /* LoginScreenController.swift */; };
+		CA3F0B443FB70969169C8E85 /* Pods_TicketStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6976A877D85EECC2C021E1DD /* Pods_TicketStore.framework */; };
+		F5ADE74825C1B664BC910131 /* Pods_TicketStoreTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19BCA17BECC9EA04C3B0C6EA /* Pods_TicketStoreTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,12 +51,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		19BCA17BECC9EA04C3B0C6EA /* Pods_TicketStoreTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TicketStoreTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B651A75DFF9626BCCBC2CAE /* Pods-TicketStore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TicketStore.debug.xcconfig"; path = "Target Support Files/Pods-TicketStore/Pods-TicketStore.debug.xcconfig"; sourceTree = "<group>"; };
+		6976A877D85EECC2C021E1DD /* Pods_TicketStore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TicketStore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A369A4D23E99EEB008B30D8 /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
 		6A369A4F23E99EFA008B30D8 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		6A369A5123E99F08008B30D8 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
 		6A369A5323E99F27008B30D8 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 		6A369A5523E9A01F008B30D8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		6A369A5623E9A01F008B30D8 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		6A369A6123EA0E41008B30D8 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		6A369A6223EA0E41008B30D8 /* SplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
+		6A3C513623EB393600085001 /* ForgotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotViewController.swift; sourceTree = "<group>"; };
+		6A3C513723EB393600085001 /* ForgotViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgotViewController.xib; sourceTree = "<group>"; };
+		6A3C513A23EB3B5B00085001 /* ForgotController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotController.swift; sourceTree = "<group>"; };
+		6A4087D823EC44CA004BFEAB /* DetailsMoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsMoviesViewController.swift; sourceTree = "<group>"; };
+		6A4087D923EC44CA004BFEAB /* DetailsMoviesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsMoviesViewController.xib; sourceTree = "<group>"; };
+		6A4087DE23EC51F7004BFEAB /* Movies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movies.swift; sourceTree = "<group>"; };
+		6A4087E023EC537B004BFEAB /* MoviesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesService.swift; sourceTree = "<group>"; };
+		6A4087E223EC9F6E004BFEAB /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		6A4087E423ECAFA9004BFEAB /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
+		6A4087E523ECAFA9004BFEAB /* MovieTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieTableViewCell.xib; sourceTree = "<group>"; };
 		6AB43DB423E868B00057536A /* TicketStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicketStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AB43DB723E868B00057536A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6AB43DBB23E868B00057536A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +87,9 @@
 		6AB43DE323E8B1240057536A /* SecurityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityService.swift; sourceTree = "<group>"; };
 		6AB43DE623E8B1F20057536A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		6AB43DE823E8BD0A0057536A /* LoginScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenController.swift; sourceTree = "<group>"; };
+		949AF506AD6CD8F3B6196365 /* Pods-TicketStore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TicketStore.release.xcconfig"; path = "Target Support Files/Pods-TicketStore/Pods-TicketStore.release.xcconfig"; sourceTree = "<group>"; };
+		CF1575AEB54647DEA245ED54 /* Pods-TicketStoreTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TicketStoreTests.release.xcconfig"; path = "Target Support Files/Pods-TicketStoreTests/Pods-TicketStoreTests.release.xcconfig"; sourceTree = "<group>"; };
+		DE9145BD484878758224756C /* Pods-TicketStoreTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TicketStoreTests.debug.xcconfig"; path = "Target Support Files/Pods-TicketStoreTests/Pods-TicketStoreTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA3F0B443FB70969169C8E85 /* Pods_TicketStore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5ADE74825C1B664BC910131 /* Pods_TicketStoreTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,8 +128,39 @@
 			children = (
 				6A369A5523E9A01F008B30D8 /* HomeViewController.swift */,
 				6A369A5623E9A01F008B30D8 /* HomeViewController.xib */,
+				6A4087E223EC9F6E004BFEAB /* HomeController.swift */,
+				6A4087E423ECAFA9004BFEAB /* MovieTableViewCell.swift */,
+				6A4087E523ECAFA9004BFEAB /* MovieTableViewCell.xib */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		6A369A6023EA0DC7008B30D8 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				6A369A6123EA0E41008B30D8 /* SplashViewController.swift */,
+				6A369A6223EA0E41008B30D8 /* SplashViewController.xib */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		6A3C513523EB391B00085001 /* Forgot */ = {
+			isa = PBXGroup;
+			children = (
+				6A3C513623EB393600085001 /* ForgotViewController.swift */,
+				6A3C513A23EB3B5B00085001 /* ForgotController.swift */,
+				6A3C513723EB393600085001 /* ForgotViewController.xib */,
+			);
+			path = Forgot;
+			sourceTree = "<group>";
+		};
+		6A4087D723EC4491004BFEAB /* DetailsMovies */ = {
+			isa = PBXGroup;
+			children = (
+				6A4087D823EC44CA004BFEAB /* DetailsMoviesViewController.swift */,
+				6A4087D923EC44CA004BFEAB /* DetailsMoviesViewController.xib */,
+			);
+			path = DetailsMovies;
 			sourceTree = "<group>";
 		};
 		6AB43DAB23E868B00057536A = {
@@ -104,6 +169,8 @@
 				6AB43DB623E868B00057536A /* TicketStore */,
 				6AB43DCD23E868B10057536A /* TicketStoreTests */,
 				6AB43DB523E868B00057536A /* Products */,
+				D1D938EA5D503300069FB740 /* Pods */,
+				EF3C531AB58372EE52465591 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,6 +186,9 @@
 		6AB43DB623E868B00057536A /* TicketStore */ = {
 			isa = PBXGroup;
 			children = (
+				6A4087D723EC4491004BFEAB /* DetailsMovies */,
+				6A3C513523EB391B00085001 /* Forgot */,
+				6A369A6023EA0DC7008B30D8 /* Splash */,
 				6A369A4C23E99EC1008B30D8 /* Coordinators */,
 				6AB43DD923E86A620057536A /* Login */,
 				6AB43DE523E8B1D70057536A /* Model */,
@@ -157,6 +227,7 @@
 			isa = PBXGroup;
 			children = (
 				6AB43DE323E8B1240057536A /* SecurityService.swift */,
+				6A4087E023EC537B004BFEAB /* MoviesService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -165,8 +236,29 @@
 			isa = PBXGroup;
 			children = (
 				6AB43DE623E8B1F20057536A /* User.swift */,
+				6A4087DE23EC51F7004BFEAB /* Movies.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		D1D938EA5D503300069FB740 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5B651A75DFF9626BCCBC2CAE /* Pods-TicketStore.debug.xcconfig */,
+				949AF506AD6CD8F3B6196365 /* Pods-TicketStore.release.xcconfig */,
+				DE9145BD484878758224756C /* Pods-TicketStoreTests.debug.xcconfig */,
+				CF1575AEB54647DEA245ED54 /* Pods-TicketStoreTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EF3C531AB58372EE52465591 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6976A877D85EECC2C021E1DD /* Pods_TicketStore.framework */,
+				19BCA17BECC9EA04C3B0C6EA /* Pods_TicketStoreTests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,9 +268,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6AB43DD323E868B10057536A /* Build configuration list for PBXNativeTarget "TicketStore" */;
 			buildPhases = (
+				FC1596CE8826C284639A2D94 /* [CP] Check Pods Manifest.lock */,
 				6AB43DB023E868B00057536A /* Sources */,
 				6AB43DB123E868B00057536A /* Frameworks */,
 				6AB43DB223E868B00057536A /* Resources */,
+				1E26FC80A31F2B2B57EF2F3A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -193,6 +287,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6AB43DD623E868B10057536A /* Build configuration list for PBXNativeTarget "TicketStoreTests" */;
 			buildPhases = (
+				7D65F5D03918F89BFF33F2DB /* [CP] Check Pods Manifest.lock */,
 				6AB43DC623E868B10057536A /* Sources */,
 				6AB43DC723E868B10057536A /* Frameworks */,
 				6AB43DC823E868B10057536A /* Resources */,
@@ -251,8 +346,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				6AB43DDD23E86A840057536A /* LoginViewController.xib in Resources */,
+				6A3C513923EB393600085001 /* ForgotViewController.xib in Resources */,
 				6AB43DC423E868B10057536A /* LaunchScreen.storyboard in Resources */,
 				6A369A5823E9A01F008B30D8 /* HomeViewController.xib in Resources */,
+				6A369A6423EA0E41008B30D8 /* SplashViewController.xib in Resources */,
+				6A4087DB23EC44CA004BFEAB /* DetailsMoviesViewController.xib in Resources */,
+				6A4087E723ECAFA9004BFEAB /* MovieTableViewCell.xib in Resources */,
 				6AB43DC123E868B10057536A /* Assets.xcassets in Resources */,
 				6AB43DBF23E868B00057536A /* Main.storyboard in Resources */,
 			);
@@ -267,21 +366,93 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1E26FC80A31F2B2B57EF2F3A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TicketStore/Pods-TicketStore-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TicketStore/Pods-TicketStore-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TicketStore/Pods-TicketStore-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D65F5D03918F89BFF33F2DB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TicketStoreTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC1596CE8826C284639A2D94 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TicketStore-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6AB43DB023E868B00057536A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				6AB43DDC23E86A840057536A /* LoginViewController.swift in Sources */,
+				6A3C513B23EB3B5B00085001 /* ForgotController.swift in Sources */,
 				6AB43DE923E8BD0A0057536A /* LoginScreenController.swift in Sources */,
 				6A369A5223E99F08008B30D8 /* LoginCoordinator.swift in Sources */,
 				6AB43DBC23E868B00057536A /* ViewController.swift in Sources */,
 				6AB43DE723E8B1F20057536A /* User.swift in Sources */,
+				6A3C513823EB393600085001 /* ForgotViewController.swift in Sources */,
 				6AB43DB823E868B00057536A /* AppDelegate.swift in Sources */,
+				6A369A6323EA0E41008B30D8 /* SplashViewController.swift in Sources */,
+				6A4087DF23EC51F7004BFEAB /* Movies.swift in Sources */,
+				6A4087E623ECAFA9004BFEAB /* MovieTableViewCell.swift in Sources */,
 				6AB43DE423E8B1240057536A /* SecurityService.swift in Sources */,
 				6A369A5023E99EFA008B30D8 /* AppCoordinator.swift in Sources */,
+				6A4087DA23EC44CA004BFEAB /* DetailsMoviesViewController.swift in Sources */,
+				6A4087E123EC537B004BFEAB /* MoviesService.swift in Sources */,
 				6A369A4E23E99EEB008B30D8 /* BaseCoordinator.swift in Sources */,
 				6A369A5423E99F27008B30D8 /* HomeCoordinator.swift in Sources */,
+				6A4087E323EC9F6E004BFEAB /* HomeController.swift in Sources */,
 				6A369A5723E9A01F008B30D8 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -440,9 +611,11 @@
 		};
 		6AB43DD423E868B10057536A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B651A75DFF9626BCCBC2CAE /* Pods-TicketStore.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L5C4G95QB9;
 				INFOPLIST_FILE = TicketStore/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -457,9 +630,11 @@
 		};
 		6AB43DD523E868B10057536A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 949AF506AD6CD8F3B6196365 /* Pods-TicketStore.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L5C4G95QB9;
 				INFOPLIST_FILE = TicketStore/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -474,6 +649,7 @@
 		};
 		6AB43DD723E868B10057536A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE9145BD484878758224756C /* Pods-TicketStoreTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -495,6 +671,7 @@
 		};
 		6AB43DD823E868B10057536A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF1575AEB54647DEA245ED54 /* Pods-TicketStoreTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

@@ -35,8 +35,23 @@ class LoginScreenController: LoginScreenControllerContract {
     }
     
     func forgotPassword() {
-        guard let vc = self.viewController else { return }
+        goToForgotPasswordScreen()
         
     }
+    
+    private func goToForgotPasswordScreen() {
+
+              guard let vc = self.viewController else { return }
+
+
+              let viewController = ForgotViewController(nibName: "ForgotViewController", bundle: nil)
+
+              viewController.modalPresentationStyle = .popover
+
+
+
+              vc.present(viewController, animated: true, completion: nil)
+
+          }
 }
 

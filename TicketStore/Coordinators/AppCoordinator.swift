@@ -17,7 +17,7 @@ class AppCoordinator: BaseCoordinator {
     
     init() {
         self.window = UIWindow()
-        self.initialViewController = LoginViewController.instantiate()
+        self.initialViewController = SplashViewController.instantiate()
         self.window.rootViewController = initialViewController
         self.window.makeKeyAndVisible()
     }
@@ -31,6 +31,7 @@ class AppCoordinator: BaseCoordinator {
     }
     
     func finish() {
+        
         
     }
     
@@ -54,7 +55,7 @@ extension AppCoordinator: LoginCoordinatorDelegate {
         showHome()
     }
 }
-
+//lembre-se de pedir com educacao sempre!!!!!!!!!! isso e basico na programaaacion
 extension AppCoordinator: HomeCoordinatorDelegate {
     func didRequestLogout() {
         homeCoordinator?.finish()

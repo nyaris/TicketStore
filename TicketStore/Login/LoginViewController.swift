@@ -31,7 +31,6 @@ class LoginViewController: UIViewController {
     
     var viewDelegate: LoginScreenDelegate?
     var controller: LoginScreenControllerContract!
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,29 +43,66 @@ class LoginViewController: UIViewController {
         
 
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background-login4.png")!)
+      
+      
        
     }
     
     override func viewDidAppear(_ animated: Bool) {
      
         buttonLogin.layer.cornerRadius = 15
+        
+        textFieldEmail.layer.cornerRadius = 18
+        textFieldEmail.layer.masksToBounds = true
+        
+        textFieldSenha.layer.cornerRadius = 18
+    
+        textFieldSenha.layer.masksToBounds = true
    
     }
     
    
     @IBAction func loginButton(_ sender: Any) {
         
-      guard let email = textFieldEmail.text, !email.isEmpty, let password = textFieldSenha.text, !password.isEmpty else {
+        guard let email = textFieldEmail.text, email.contains("@"), let password = textFieldSenha.text, !password.isEmpty else {
+            let alert = UIAlertController(title: "Campos incorretos!", message: "Preencha todos os campos, ou verifique se inseriu os dados corretos.", preferredStyle: .alert)
+
+
+      
+
+                 alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+
+
+      
+
+                 self.present(alert, animated: true)
+
+                 
+
                  return
+
              }
              
              controller.login(email: email, password: password)
-         }
+
+        }
+        
+        
+         
     
     
     @objc func closeKeyboard() {
           self.view.endEditing(true)
       }
+
+    @IBAction func register(_ sender: Any) {
+        
+        controller.forgotPassword()
+        
+    }
+        
+
+  
 
 
    

@@ -1,13 +1,16 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="TicketStore" customModuleProvider="target">
             <connections>
+                <outlet property="tableView" destination="tFO-jN-5ii" id="ufx-60-6d8"/>
+                <outlet property="usernameLabel" destination="lwf-Oj-Lc8" id="oEQ-N2-PKG"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -15,8 +18,81 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SVf-Y1-OBd">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="160"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Ndk-A6-Npf">
+                            <rect key="frame" x="82" y="37" width="196" height="86"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D1I-R0-ic6">
+                            <rect key="frame" x="8" y="65" width="23" height="58"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" image="plus.square.fill.on.square.fill" catalog="system"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x0b-1R-Ngt">
+                            <rect key="frame" x="314" y="82" width="85" height="24"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" image="escape" catalog="system"/>
+                            <connections>
+                                <action selector="logout:" destination="-1" eventType="touchUpInside" id="8en-IO-Ts8"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.60443765859999998" green="0.12969135579999999" blue="0.11837267629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tFO-jN-5ii">
+                    <rect key="frame" x="0.0" y="262" width="375" height="405"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gdj-tx-5WF">
+                    <rect key="frame" x="0.0" y="160" width="375" height="0.0"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lwf-Oj-Lc8">
+                            <rect key="frame" x="8" y="6" width="59.5" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </view>
+                <searchBar contentMode="redraw" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ytL-fY-YgZ">
+                    <rect key="frame" x="0.0" y="206" width="375" height="56"/>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Gdj-tx-5WF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="3JU-pJ-OV1"/>
+                <constraint firstItem="SVf-Y1-OBd" firstAttribute="leading" secondItem="Gdj-tx-5WF" secondAttribute="leading" id="6BP-O8-Dju"/>
+                <constraint firstItem="SVf-Y1-OBd" firstAttribute="bottom" secondItem="Gdj-tx-5WF" secondAttribute="bottom" id="7oM-dE-gWc"/>
+                <constraint firstItem="Gdj-tx-5WF" firstAttribute="top" secondItem="SVf-Y1-OBd" secondAttribute="bottom" id="Bss-9Y-OTZ"/>
+                <constraint firstItem="tFO-jN-5ii" firstAttribute="top" secondItem="ytL-fY-YgZ" secondAttribute="bottom" id="FCe-6E-EYR"/>
+                <constraint firstItem="SVf-Y1-OBd" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="HX1-VZ-iYQ"/>
+                <constraint firstAttribute="trailing" secondItem="SVf-Y1-OBd" secondAttribute="trailing" constant="-39" id="K2h-Pp-OEV"/>
+                <constraint firstAttribute="trailing" secondItem="tFO-jN-5ii" secondAttribute="trailing" id="Tua-s3-aMN"/>
+                <constraint firstAttribute="trailing" secondItem="Gdj-tx-5WF" secondAttribute="trailing" id="YfH-02-BBl"/>
+                <constraint firstItem="tFO-jN-5ii" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="Zxv-YW-v8d"/>
+                <constraint firstItem="SVf-Y1-OBd" firstAttribute="leading" secondItem="ytL-fY-YgZ" secondAttribute="leading" id="bJT-nO-WSS"/>
+                <constraint firstItem="SVf-Y1-OBd" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="cCe-Wg-Opz"/>
+                <constraint firstAttribute="bottom" secondItem="SVf-Y1-OBd" secondAttribute="bottom" constant="507" id="edl-tS-vwZ"/>
+                <constraint firstItem="ytL-fY-YgZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="hhg-Xh-sPS"/>
+                <constraint firstItem="tFO-jN-5ii" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="szV-o2-mH3"/>
+                <constraint firstAttribute="trailing" secondItem="ytL-fY-YgZ" secondAttribute="trailing" id="tOG-mh-jRH"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="136.80000000000001" y="95.802098950524751"/>
         </view>
     </objects>
+    <resources>
+        <image name="escape" catalog="system" width="64" height="60"/>
+        <image name="logo" width="350" height="120"/>
+        <image name="plus.square.fill.on.square.fill" catalog="system" width="64" height="56"/>
+    </resources>
 </document>
