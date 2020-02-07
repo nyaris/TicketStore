@@ -46,7 +46,9 @@ class DetailsMoviesViewController: UIViewController {
     
     @IBAction func buttonReturn(_ sender: Any) {
         
-        self.dismiss (animated: true, completion: nil)
+        navigationController?.popViewController(animated: true)
+
+        dismiss(animated: true, completion: nil)
     }
     
     

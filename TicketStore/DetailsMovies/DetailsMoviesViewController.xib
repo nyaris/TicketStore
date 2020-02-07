@@ -45,7 +45,7 @@
                     <rect key="frame" x="-13" y="-16" width="434" height="153"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dlm-Jv-6SC">
-                            <rect key="frame" x="34" y="70" width="18" height="23"/>
+                            <rect key="frame" x="34" y="70" width="17.333333333333329" height="23"/>
                             <fontDescription key="fontDescription" type="system" pointSize="19"/>
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <state key="normal" image="xmark" catalog="system"/>
@@ -87,10 +87,10 @@
                     <state key="normal" title="Locais de Exibição"/>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4BM-G0-Gac">
-                    <rect key="frame" x="316.66666666666669" y="325" width="40" height="37"/>
+                    <rect key="frame" x="325.66666666666669" y="325" width="31" height="23"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="40" id="NWK-QO-hcM"/>
-                        <constraint firstAttribute="width" constant="40" id="Xug-jS-E9f"/>
+                        <constraint firstAttribute="height" constant="26" id="NWK-QO-hcM"/>
+                        <constraint firstAttribute="width" constant="31" id="Xug-jS-E9f"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="28"/>
                     <color key="tintColor" red="0.96381265859999998" green="0.3205597889197071" blue="0.4853353817539755" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

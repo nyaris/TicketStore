@@ -18,22 +18,41 @@ class HomeCoordinator: BaseCoordinator {
     var controller: HomeController
     var view: UIViewController?
     var navigation: UINavigationController?
+    var root: UITabBarController
+    var window: UIWindow
+    
+    let viewModel: Movies
     
     init(delegate: HomeCoordinatorDelegate) {
         self.delegate = delegate
         controller = HomeController(delegate: nil, service: MoviesService())
         controller.set(delegateHome: self)
+        self.root = UITabBarController()
     }
     
     func start() {
-        let view = HomeViewController(controller: controller)
-        view.delegate = self
-        navigation = UINavigationController(rootViewController: view)
-        navigation?.isNavigationBarHidden = true
-        rootViewController = navigation
+     let view = HomeViewController(controller: controller)
+          view.delegate = self
+          navigation = UINavigationController(rootViewController: view)
+          navigation?.isNavigationBarHidden = true
+          rootViewController = navigation
+        
+        self.view = HomeViewController(viewModel: viewModel)
+               navigation = UINavigationController(rootViewController: view)
+               if #available(iOS 13.0, *) {
+                   navigation?.tabBarItem = UITabBarItem(title: "Usuários", image: UIImage(systemName: "person.circle"), selectedImage: UIImage(systemName: "person.circle.fill"))
+               } else {
+                   // Fallback on earlier versions
+               }
+               
+               root.setViewControllers([navigation!], animated: false)
+               window.rootViewController = root
     }
     
     func finish() {
+        
+        view = nil
+        navigation = nil
     }
 }
     
