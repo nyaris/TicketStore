@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -19,44 +19,56 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Aqui é seu e-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iCL-GH-SOb">
-                    <rect key="frame" x="45" y="395" width="324" height="34"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
-                </textField>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Aqui sua senha secreta" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sxh-Li-xtg">
-                    <rect key="frame" x="45" y="467" width="324" height="34"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
-                </textField>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cadastre-se usando seu e-mail e escolhendo uma super senha secreta! " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5rV-sc-bu6">
-                    <rect key="frame" x="30" y="304" width="354" height="41"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-red" translatesAutoresizingMaskIntoConstraints="NO" id="B0e-B5-deL">
-                    <rect key="frame" x="135" y="164" width="144" height="120"/>
-                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kGl-VQ-6FC">
+                    <rect key="frame" x="9" y="237" width="396" height="365"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-red" translatesAutoresizingMaskIntoConstraints="NO" id="B0e-B5-deL">
+                            <rect key="frame" x="99" y="8" width="208" height="120"/>
+                        </imageView>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Aqui sua senha secreta" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sxh-Li-xtg">
+                            <rect key="frame" x="25" y="217" width="346" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cadastre-se usando seu e-mail e escolhendo uma super senha secreta! " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5rV-sc-bu6">
+                            <rect key="frame" x="6" y="147" width="385" height="40.666666666666671"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Aqui é seu e-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iCL-GH-SOb">
+                            <rect key="frame" x="25" y="273" width="346" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="sxh-Li-xtg" secondAttribute="trailing" constant="25" id="0C1-3Q-aau"/>
+                        <constraint firstItem="5rV-sc-bu6" firstAttribute="top" secondItem="kGl-VQ-6FC" secondAttribute="top" constant="147" id="31c-FK-WWl"/>
+                        <constraint firstItem="iCL-GH-SOb" firstAttribute="top" secondItem="sxh-Li-xtg" secondAttribute="bottom" constant="22" id="9vW-V3-IeS"/>
+                        <constraint firstItem="5rV-sc-bu6" firstAttribute="leading" secondItem="kGl-VQ-6FC" secondAttribute="leading" constant="6" id="HNH-pQ-zhg"/>
+                        <constraint firstAttribute="trailing" secondItem="iCL-GH-SOb" secondAttribute="trailing" constant="25" id="MRL-XW-gdo"/>
+                        <constraint firstItem="sxh-Li-xtg" firstAttribute="top" secondItem="5rV-sc-bu6" secondAttribute="bottom" constant="30" id="N1V-ZD-toF"/>
+                        <constraint firstAttribute="height" constant="365" id="RPC-kt-xSy"/>
+                        <constraint firstAttribute="trailing" secondItem="5rV-sc-bu6" secondAttribute="trailing" constant="5" id="aWl-5x-uSe"/>
+                        <constraint firstItem="B0e-B5-deL" firstAttribute="top" secondItem="kGl-VQ-6FC" secondAttribute="top" constant="8" id="qPM-BJ-l2g"/>
+                        <constraint firstItem="iCL-GH-SOb" firstAttribute="leading" secondItem="kGl-VQ-6FC" secondAttribute="leading" constant="25" id="ses-aX-PZA"/>
+                        <constraint firstItem="sxh-Li-xtg" firstAttribute="leading" secondItem="kGl-VQ-6FC" secondAttribute="leading" constant="25" id="vvT-Mo-6mV"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="B0e-B5-deL" secondAttribute="trailing" constant="135" id="0Mq-OW-8tt"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="iCL-GH-SOb" secondAttribute="trailing" constant="45" id="5Gc-uD-npK"/>
-                <constraint firstItem="sxh-Li-xtg" firstAttribute="top" secondItem="iCL-GH-SOb" secondAttribute="bottom" constant="38" id="DPf-Lh-lPH"/>
-                <constraint firstItem="5rV-sc-bu6" firstAttribute="top" secondItem="B0e-B5-deL" secondAttribute="bottom" constant="20" id="EvM-lU-Cvk"/>
-                <constraint firstItem="iCL-GH-SOb" firstAttribute="top" secondItem="5rV-sc-bu6" secondAttribute="bottom" constant="50" id="GXm-lY-C8Y"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="5rV-sc-bu6" secondAttribute="trailing" constant="30" id="J8D-du-N0a"/>
-                <constraint firstItem="B0e-B5-deL" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="TMZ-Y4-n66"/>
-                <constraint firstItem="sxh-Li-xtg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="45" id="Uth-be-Yc8"/>
-                <constraint firstItem="5rV-sc-bu6" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="260" id="Vxh-Rg-EUY"/>
-                <constraint firstItem="5rV-sc-bu6" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="l20-Cp-hec"/>
-                <constraint firstItem="B0e-B5-deL" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="135" id="mV6-rz-2Ux"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="sxh-Li-xtg" secondAttribute="trailing" constant="45" id="tVf-Or-Bdo"/>
-                <constraint firstItem="iCL-GH-SOb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="45" id="vTm-tF-ZpK"/>
+                <constraint firstItem="B0e-B5-deL" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="108" id="6Br-9j-Dd3"/>
+                <constraint firstItem="kGl-VQ-6FC" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="8qa-LX-mt2"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="B0e-B5-deL" secondAttribute="trailing" constant="98" id="GdM-rD-5iy"/>
+                <constraint firstItem="kGl-VQ-6FC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="9" id="WEO-33-0Dy"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="kGl-VQ-6FC" secondAttribute="trailing" constant="9" id="gY9-DI-gMx"/>
+                <constraint firstItem="kGl-VQ-6FC" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-28.5" id="hTZ-Ii-C4g"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="137.68115942028987" y="132.58928571428572"/>
+            <point key="canvasLocation" x="136.23188405797103" y="131.25"/>
         </view>
     </objects>
     <resources>

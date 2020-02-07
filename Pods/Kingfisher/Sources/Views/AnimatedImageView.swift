@@ -153,7 +153,7 @@ open class AnimatedImageView: UIImageView {
     }
 
     /// Delegate of this `AnimatedImageView` object. See `AnimatedImageViewDelegate` protocol for more.
-    public weak var delegate: AnimatedImageViewDelegate?
+    public weak var delegateView: AnimatedImageViewDelegate?
     
     // MARK: - Private property
     /// `Animator` instance that holds the frames of a specific image in memory.
@@ -255,7 +255,7 @@ open class AnimatedImageView: UIImageView {
                 framePreloadCount: framePreloadCount,
                 repeatCount: repeatCount,
                 preloadQueue: preloadQueue)
-            animator.delegate = self
+            animator.delegateView = self
             animator.needsPrescaling = needsPrescaling
             animator.backgroundDecode = backgroundDecode
             animator.prepareFramesAsynchronously()
@@ -282,7 +282,7 @@ open class AnimatedImageView: UIImageView {
 
         guard !animator.isFinished else {
             stopAnimating()
-            delegate?.animatedImageViewDidFinishAnimating(self)
+            delegateView?.animatedImageViewDidFinishAnimating(self)
             return
         }
 
@@ -315,7 +315,7 @@ protocol AnimatorDelegate: AnyObject {
 
 extension AnimatedImageView: AnimatorDelegate {
     func animator(_ animator: Animator, didPlayAnimationLoops count: UInt) {
-        delegate?.animatedImageView(self, didPlayAnimationLoops: count)
+        delegateView?.animatedImageView(self, didPlayAnimationLoops: count)
     }
 }
 
@@ -372,7 +372,7 @@ extension AnimatedImageView {
 
         var backgroundDecode = true
 
-        weak var delegate: AnimatorDelegate?
+        weak var delegateView: AnimatorDelegate?
 
         // Total duration of one animation loop
         var loopDuration: TimeInterval = 0
@@ -538,7 +538,7 @@ extension AnimatedImageView {
                 if isReachMaxRepeatCount {
                     isFinished = true
                 }
-                delegate?.animator(self, didPlayAnimationLoops: currentRepeatCount)
+                delegateView?.animator(self, didPlayAnimationLoops: currentRepeatCount)
             }
         }
 

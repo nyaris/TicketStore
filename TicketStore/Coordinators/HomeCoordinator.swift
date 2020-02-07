@@ -16,17 +16,20 @@ class HomeCoordinator: BaseCoordinator {
     var rootViewController: UINavigationController?
     let delegate: HomeCoordinatorDelegate
     var controller: HomeController
+    var view: UIViewController?
+    var navigation: UINavigationController?
     
     init(delegate: HomeCoordinatorDelegate) {
         self.delegate = delegate
         controller = HomeController(delegate: nil, service: MoviesService())
+        controller.set(delegateHome: self)
     }
     
     func start() {
         let view = HomeViewController(controller: controller)
         view.delegate = self
-        let navigation = UINavigationController(rootViewController: view)
-        navigation.isNavigationBarHidden = true
+        navigation = UINavigationController(rootViewController: view)
+        navigation?.isNavigationBarHidden = true
         rootViewController = navigation
     }
     
@@ -34,12 +37,19 @@ class HomeCoordinator: BaseCoordinator {
     }
 }
     
-    extension HomeCoordinator: HomeScreenViewControllerDelegate{
-    
+extension HomeCoordinator: HomeScreenViewControllerDelegate{
     func didTouchLogout() {
         delegate.didRequestLogout()
     }
-    
+}
+
+extension HomeCoordinator: HomeControllerDelegate {
+    func didSelectItem(_ movie: Movies) {
+        let viewModel = DetailsMoviesViewModel(movie: movie)
+        view = DetailsMoviesViewController(viewModel: viewModel)
+        navigation?.pushViewController(view!, animated: true)
+        
+    }
 }
 
 

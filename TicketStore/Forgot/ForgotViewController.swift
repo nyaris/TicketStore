@@ -15,7 +15,7 @@ class ForgotViewController: UIViewController {
 
         private let DEFAULT_MARGIN: CGFloat = 20.0
         private let DEFAULT_SPACING: CGFloat = 40.0
-        private let SMALL_SPACING: CGFloat = 120.0
+        private let SMALL_SPACING: CGFloat = 50.0
         
        
         private lazy var sendEmailButton: UIButton = {

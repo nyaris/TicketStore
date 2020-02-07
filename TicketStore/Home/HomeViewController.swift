@@ -19,6 +19,8 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     weak var delegate: HomeScreenViewControllerDelegate?
+    var viewModel: DetailsMoviesViewModel?
+       
     
     var securityService: SecurityServiceContract!
 
@@ -72,8 +74,9 @@ class HomeViewController: UIViewController {
     }
     
 
-}
-
+        
+        
+    }
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return controller?.movies.count ?? 0
@@ -88,6 +91,10 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+         controller?.showDetails(index: indexPath)
+     }
 }
 
 extension HomeViewController: MoviesViewModelViewDelegate {

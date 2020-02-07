@@ -16,7 +16,7 @@ struct Movies: Codable {
     let plot: String
     let director: String
     let writer: String
-    let year: String
+    let yearOfCreation: Int
     
     private enum CodingKeys: String, CodingKey {
         case id
@@ -26,7 +26,7 @@ struct Movies: Codable {
         case plot
         case director
         case writer
-        case year
+        case yearOfCreation
         //        case complemento
     }
 }

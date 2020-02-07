@@ -17,7 +17,7 @@ enum MoviesServiceError: Error {
     case error
 }
 class MoviesService: MoviesServiceContract {
-    let baseUrl: String = "http://localhost:3000"
+    let baseUrl: String = "https://ticketstore-1581086817350.azurewebsites.net"
     
     func list(completionHandler: @escaping (Result<[Movies],MoviesServiceError>) -> Void) {
         AF.request("\(baseUrl)/movies").response { (res) in

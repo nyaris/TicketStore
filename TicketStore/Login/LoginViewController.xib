@@ -39,23 +39,23 @@
                             <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                         </textField>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Não é um membro? " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WVm-J8-ev3">
-                            <rect key="frame" x="0.0" y="270" width="152" height="21"/>
+                            <rect key="frame" x="0.0" y="272" width="152" height="21"/>
                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4gU-KT-oiU">
-                            <rect key="frame" x="176" y="263" width="104" height="35"/>
-                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                            <rect key="frame" x="163" y="263" width="117" height="39"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
                             <state key="normal" title="Registre-se">
-                                <color key="titleColor" red="0.60443765859999998" green="0.12969135579999999" blue="0.11837267629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="titleColor" red="0.96381265859999998" green="0.099928446611621105" blue="0.17337473402347445" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                             <connections>
                                 <action selector="register:" destination="-1" eventType="touchUpInside" id="bCt-bU-vdo"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iRL-bM-7X6">
-                            <rect key="frame" x="130" y="326" width="150" height="33"/>
+                            <rect key="frame" x="130" y="330" width="150" height="33"/>
                             <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="150" id="Vvn-Te-oYM"/>

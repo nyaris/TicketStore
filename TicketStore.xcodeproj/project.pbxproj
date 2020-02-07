@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A35A5CB23EDA83A000DC81E /* DetailsMoviesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A35A5CA23EDA83A000DC81E /* DetailsMoviesViewModel.swift */; };
 		6A369A4E23E99EEB008B30D8 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A369A4D23E99EEB008B30D8 /* BaseCoordinator.swift */; };
 		6A369A5023E99EFA008B30D8 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A369A4F23E99EFA008B30D8 /* AppCoordinator.swift */; };
 		6A369A5223E99F08008B30D8 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A369A5123E99F08008B30D8 /* LoginCoordinator.swift */; };
@@ -54,6 +55,7 @@
 		19BCA17BECC9EA04C3B0C6EA /* Pods_TicketStoreTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TicketStoreTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B651A75DFF9626BCCBC2CAE /* Pods-TicketStore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TicketStore.debug.xcconfig"; path = "Target Support Files/Pods-TicketStore/Pods-TicketStore.debug.xcconfig"; sourceTree = "<group>"; };
 		6976A877D85EECC2C021E1DD /* Pods_TicketStore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TicketStore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A35A5CA23EDA83A000DC81E /* DetailsMoviesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsMoviesViewModel.swift; sourceTree = "<group>"; };
 		6A369A4D23E99EEB008B30D8 /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
 		6A369A4F23E99EFA008B30D8 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		6A369A5123E99F08008B30D8 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
@@ -112,6 +114,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6A35A5C923EDA807000DC81E /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				6A35A5CA23EDA83A000DC81E /* DetailsMoviesViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		6A369A4C23E99EC1008B30D8 /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
@@ -194,6 +204,7 @@
 				6AB43DE523E8B1D70057536A /* Model */,
 				6AB43DE223E8B0FF0057536A /* Services */,
 				6A369A5923E9A026008B30D8 /* Home */,
+				6A35A5C923EDA807000DC81E /* ViewModels */,
 				6AB43DB723E868B00057536A /* AppDelegate.swift */,
 				6AB43DBB23E868B00057536A /* ViewController.swift */,
 				6AB43DBD23E868B00057536A /* Main.storyboard */,
@@ -435,6 +446,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A35A5CB23EDA83A000DC81E /* DetailsMoviesViewModel.swift in Sources */,
 				6AB43DDC23E86A840057536A /* LoginViewController.swift in Sources */,
 				6A3C513B23EB3B5B00085001 /* ForgotController.swift in Sources */,
 				6AB43DE923E8BD0A0057536A /* LoginScreenController.swift in Sources */,
